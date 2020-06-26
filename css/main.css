@@ -1,0 +1,929 @@
+/*===============================
+            FONTS
+===============================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*===============================
+            GENERAL
+===============================*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clearfix{
+    clear: both;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-family: "Poppins";
+    color: #FFF;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1180px;
+}
+
+.contain{
+    margin: 0 auto;
+    width: 80%;
+}
+
+a{
+    color: #FFF;
+}
+
+iframe{
+    border: none;
+}
+
+/*===============================
+              NAVBAR
+===============================*/
+
+nav{
+    position: fixed;
+    width: 100vw;
+    background-color: #101010fa;
+    box-shadow: 1px 1px 10px #e8461d5d;
+    height: 60px;
+    left: 0;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    z-index: 676767;
+    margin-top: 150px;
+}
+
+nav i.fa-bars{
+    color: #E8441D;
+    float: right;
+    cursor: pointer;
+    display: none !important;
+}
+
+
+.brand-name{
+    position: absolute;
+    display: inline-block;
+    font-family: "Electrolize";
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 6px;
+    padding-left: 2%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navigation{
+    float: right;
+    padding-top: 7px;
+}
+
+.nav-bar li{
+    padding-left: 10px ;
+}
+
+.nav-bar li a{
+    padding: 12px 10px;
+    text-decoration: none;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: color ease-in-out .5s;
+}
+
+.nav-bar li a:hover,
+.nav-bar li a:focus{
+    color: #E8441D;
+}
+
+.dark-hover li a:hover,
+.dark-hover li a:focus{
+    color: #E8441D;
+}
+
+.mode{
+    width: 100%;
+    right: 0;
+    top: 70px;
+    position: absolute;
+    height: 100vh;
+    background-color: black;
+    transition: all ease-in-out 1s;
+    left: -100vw;
+
+}
+
+.mode ul{
+    background-color: rgb(255, 51, 0);
+    position: absolute;
+    left: 0;
+    opacity: 1 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80vw;
+    height: 100vh;
+    z-index: 33;
+    padding: 30px 0;
+
+
+}
+
+
+.mode ul li a {
+    font-size: 25px;
+}
+
+
+/*===============================
+              HERO
+===============================*/
+
+.home-hero{
+    height: 150vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../IMAGES/home-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    margin-top: -150px;
+
+
+}
+
+.btn{
+    width: 100%;
+    color: #FFF;
+    text-decoration: none;
+    background-color: #E8441D;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    box-shadow: 1px 1px 10px black;
+    transition: background-color ease-in-out .5s;
+    font-family: "Oswald";
+    
+}
+
+.btn:hover,
+.btn:focus{
+    background-color: rgb(190, 52, 19);
+}
+
+.home-hero p{
+    font-size: 16px;
+    text-shadow: 1px 1px 10px black;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.home-hero h1{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Oswald";
+    font-size: 40px;
+    text-shadow: 1px 1px 20px black;
+    padding-bottom: 20px;
+
+}
+
+/*======================================
+            CLASSES SECTION
+======================================*/
+
+.our-classes{
+    display: flex;
+    width: 100%;
+}
+
+.class{
+    width: 33.333%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 5% 7% 6% 5% ;
+    box-shadow: 1px 1px 10px black;
+}
+
+.class span{
+    color: rgb(209, 179, 168);
+    font-size: 20px;
+}
+
+.class h3{
+    font-family: Oswald;
+    font-size: 35px;
+    font-weight: 400;
+    padding: 7px 0;
+}
+
+.class01 h3{
+    font-size: 30px;
+}.class03 h3{
+    font-size: 30px;
+}
+
+.class p{
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.class01{
+    background: linear-gradient(160deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../IMAGES/our-classes-1.jpg) center no-repeat;
+    background-size: cover;
+    float: left;
+    z-index: 3;
+
+}
+
+.class02{
+    background: linear-gradient(160deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../IMAGES//our-classes-2.jpg) center no-repeat;
+    background-size: cover;
+    padding-top: 100px ;
+    padding-bottom: 100px ;
+    transform: translateY(-7%);
+    z-index: 2;
+
+}
+
+.class03{
+    background: linear-gradient(160deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url(../IMAGES/our-classes-3.jpg) center no-repeat;
+    background-size: cover;
+    float: right;
+    z-index: 1;
+
+}
+
+/*======================================
+            ABOUT US SECTION
+======================================*/
+
+.about-us{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: -5%;
+    padding: 00% 5% 5% 0%;
+    background: linear-gradient(135deg, #e8461dbb 0%, #e8461dbb 100%), url(../IMAGES/about-us.jpg) center no-repeat;
+    background-size: cover ;
+}
+
+.video-view{
+    width: 60%;
+    height: 60%;
+    padding: 0 5%;
+}
+
+.video-view iframe{
+    width: 100%;
+    height:100%
+}
+
+.about-us-info{
+    width: 50%;
+    height: 60vh;
+    
+}
+
+.about-us-info span{
+    color: #FFF /*#c4c4c4*/;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.about-us-info h3{
+    color: #FFF /*#1c1a1b*/;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Oswald";
+    /*line-height: 2;*/
+    padding-bottom: 20px;
+}
+
+.about-us-info .first-p{
+    color: #FFF /*#1c1a1b*/;
+    font-size: 16px;
+    line-height: 1;
+    padding-bottom: 15px ;
+
+}
+
+.about-us-info .second-p{
+    color: #FFF/*#ababab*/;
+    font-size: 14px;
+    line-height: 1.2;
+
+}
+
+/*===============================
+            PROPERTIES
+===============================*/
+
+.properties{
+    width: 100%;
+    height: 85vh;
+    background-color: indianred;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #e2dbd96c 0%, #e2dbd96c 100%), url(../IMAGES/pro-back.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.pro-top, .pro-bottom{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    opacity: .8;
+}
+
+.pro{
+    width: 33.333%;
+    height: 100%;
+    background-color: #F5F5F5;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    padding: 2% 5% 2% 5%;
+}
+
+.pro a{
+    color: #1c1a1b;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    transition: color .3s;
+}
+
+.pro-btn:hover,
+.pro-btn:focus{
+    color: #E8441D;
+
+}
+
+.pro p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #8d8d8d;
+    line-height: 1.5;
+}
+
+.white-pro{
+    background-color: #FFF;
+}
+
+
+/*===============================
+            EVENTS
+===============================*/
+
+.events{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #1c1a1b;
+}
+
+.left-image{
+    width: 40%;
+    background-color: brown;
+    background: linear-gradient(135deg, #b4b4b43d 0%, #b4b4b43d 100%), url(../IMAGES/events-left-back.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.right-text{
+    width: 50%;
+    height: 100%;
+    padding: 10% 5%;
+    float: left;
+}
+
+
+.sec-heading{
+    width: auto;
+    height: auto;
+}
+
+.sec-heading p{
+    font-size: 14px;
+    color: #c4c4c4;
+    font-family: "poppins";
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.sec-heading h2{
+    font-family: Oswald;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.col{
+    width: 50%;
+    max-height: 100%;
+    padding: 7.5% 5% 7.5% 0;
+    float: left;
+}
+
+.col .BMD{
+    font-family: "Oswald";
+    font-size: 60px;
+    color: #E8441D;
+}
+
+.col span{
+    font-size: 14px;
+    color: #ababab;
+}
+
+.col h3{
+    font-size: 24px;
+    color: #FFF;
+    font-weight: 400;
+    padding: 25px 0 0 0;
+}
+
+.col .ZMD{
+    font-size: 16px;
+    columns: #FFF;
+    line-height: 1.5;
+    padding: 20px 0 0 0;
+}
+
+
+/*===============================
+              PLANS
+===============================*/
+
+.plans{
+    text-align: center;
+    background: linear-gradient(135deg, #e8461d70 0%, #e8461d70 100%), url(../IMAGES/plans-back.jpg) center no-repeat;
+    background-size: cover ;
+    width: 100%;
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.plans-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.plans-head{
+    width: 100%;
+    padding-bottom: 2.5%;
+}
+
+.plans-head p{
+    font-size: 14px;
+    color: #c4c4c4;
+    font-family: "poppins";
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.plans-head h2{
+    font-family: Oswald;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.plan-box{
+    width: 32%;
+}
+
+.plan-box-header{
+    width: 100%;
+    background-color: #1c1a1b;
+    padding: 10%;
+}
+
+.plan-box-header p{
+    font-size: 18px;
+}
+
+
+.plan-box-header span{
+    color: #E8441D;
+    font-family: Oswald;
+    font-size: 60px;
+    font-weight: 400;
+    
+
+}
+
+.plan-box-des{
+    background-color: #F5F5F5;
+    padding: 12%;
+    min-width: 100%;
+}
+
+.plan-box-des p{
+    color: #696969;
+    font-size: 14px;
+    padding: 5%;
+}
+
+.plan-box-des button{
+    width: 62% ;
+    height: 56px ;
+    border: none;
+    background-color: #E8441D;
+    color: #FFF;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    transition: background-color ease-in-out .5s;
+    font-family: "Oswald";
+}
+
+
+/*===============================
+            TESTIMONIALS
+===============================*/
+
+
+.testimonials{
+    width: 100%;
+    background: linear-gradient(135deg, #00000099 0%, #00000099 100%), url(../IMAGES/testimonials.jpg) center no-repeat;
+    background-size: cover ;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 10% 20%;
+}
+
+
+.bullet{
+    width: 12px;
+    height: 12px;
+    background-color: #E8441D;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: color ease-in-out .5s;
+    margin: 0 2%;
+}
+
+.bullet:hover,
+.bullet:focus{
+    background-color: #FFF;
+}
+
+.client-say{
+    color: #c4c4c4;
+    font-size: 14px;
+    padding: 2.5% 0;
+}
+
+.testi-head{
+    color: #FFF;
+    font-family: "Oswald";
+    font-size: 40px;
+    font-weight: 400;
+    padding: 2.5% 0;
+
+}
+
+.say{
+    line-height: 1.6;
+    padding: 2.5% 0;
+}
+
+.testi-name{
+    padding: 2.5% 0 5% 0;
+
+}
+/*======================================
+               NEWS
+======================================*/
+.news{
+    padding: 5% 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+.news-head h2{
+    color: #1c1a1b;
+    font-family: "Oswald";
+    font-size: 40px;
+    font-weight: 400;
+    padding: 2.5% 0;
+}
+
+.news-item{
+    width: 23.5%;
+    padding-bottom: 3%;
+    text-align: left;
+}
+
+.news-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5%;
+}
+.liink{
+    padding: 5% 0;
+}
+
+.news-item a{
+    text-decoration: none;
+    color: #1c1a1b;
+    margin: 5% 0 !important;
+}
+
+.news-item span{
+    font-size: 14px;
+    color: #ababab;
+
+}
+/*======================================
+              QUICK-BAR
+======================================*/
+
+.quick-bar{
+    width: 100%;
+    background-color: #1C1A1B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.left-bar{
+    width: 100%;
+    padding: 5% 25% 5% 0;
+}
+
+.left-bar p{
+    padding: 5% 50% 5% 0;
+    font-size: 14px;
+    color: #696969;
+    line-height: 1.8;
+}
+
+.left-bar .social-icons i{
+    padding: 3% 3% 3% 0;
+}
+
+/*======================================
+              FOOTER
+======================================*/
+
+footer{
+    background-color: #000000;
+    padding: 20px 0 ;
+}
+footer p{
+    font-size: 12px;
+    color: #ababab;
+}
+/*======================================
+              MEDIA QUERIES
+======================================*/
+
+@media screen and ( min-width: 424px){
+
+    .home-hero h1{
+        font-size: 50px;
+        padding-top: 0;
+    }
+}
+
+@media screen and ( min-width: 500px){
+
+    .home-hero h1{
+        font-size: 65px;
+        width: 80%;
+        padding-top: 0;
+    }
+}
+
+@media screen and ( min-width: 1023px){
+
+    .home-hero h1{
+        font-size: 90px;
+        width: 70%;
+        padding-top: 0;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .home-hero p{
+        margin-top: 100px;
+    }
+
+}
+
+
+@media screen and (max-width: 1023px){
+    
+
+
+    nav i.fa-bars{
+        display: block !important;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .mode{
+        display: block;
+    }
+
+    
+}
+
+@media screen and (max-width: 1180px){
+
+    .nav-bar li a{
+        font-size: 11px;
+
+    }
+}
+
+@media screen and (max-width: 960px){
+
+    .our-classes{
+        display: flex;
+        flex-direction: column;
+    }
+    .class{
+        width: 100%;
+        transform: translateY(0);
+
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    .about-us{
+        height: 110vh;
+        display: flex;
+        flex-direction: column;
+        padding: 10% 0 5%  0;
+        margin:0;
+        
+    }
+    
+    .video-view{
+        width: 100%;
+        height: 50%;
+    }
+    
+    .about-us-info{
+        min-width: 100%;
+        height: auto;
+        padding: 5%;
+        display: block;
+    }
+
+    .about-us-info span,
+    .about-us-info h3,
+    .about-us-info p{
+        line-height: none;
+    }
+
+    .properties{
+        height: auto;
+        background: linear-gradient(135deg, #e2dbd96c 0%, #e2dbd96c 100%), url(../IMAGES/pro-back-2.jpg) center no-repeat;
+        background-size: cover;
+    }
+
+    .pro-top, .pro-bottom{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .pro{
+        width: 100%;
+        height: 40vh;
+    }
+
+    .events{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .left-image{
+        width: 100%;
+        height: 60vh;
+    }
+    
+    .right-text{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .sec-heading{
+        width: 100%;
+        height: auto;
+    }
+    
+    
+    .col{
+        width: 100%;
+        max-height: 100%;
+    }
+
+    
+    .plans-container{
+        flex-direction: column;
+    }
+
+    .plan-box{
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .news-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .news-item{
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .left-bar{
+        width: 100%;
+    }
+    
+
+}
+
