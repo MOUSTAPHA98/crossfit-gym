@@ -12,7 +12,7 @@ window.onscroll = function () {
     }
 };
 
-const selectElement = (s) => document.querySelector(s);
+/*const selectElement = (s) => document.querySelector(s);
 
 
 selectElement('.open').addEventListener('click',() => {
@@ -21,4 +21,4 @@ selectElement('.open').addEventListener('click',() => {
 
 selectElement('.close').addEventListener('click',() => {
     selectElement('.nav-list').classList.remove('active');
-});
+});*/
