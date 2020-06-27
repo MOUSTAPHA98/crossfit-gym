@@ -804,7 +804,7 @@ footer p{
     }
 
     .navigation{
-        /* display:none; =======================================================================*/
+        display:none;
     }
 
     .mode{
@@ -824,6 +824,8 @@ footer p{
 
 @media screen and (max-width: 960px){
 
+    
+
     .our-classes{
         display: flex;
         flex-direction: column;
@@ -836,6 +838,8 @@ footer p{
 }
 
 @media screen and (max-width: 767px){
+
+    
 
     .about-us{
         height: 110vh;
